@@ -23,12 +23,12 @@ export class MeteoService {
       const range = (start: number, stop: number, step: number) =>
       Array.from({ length: (stop - start) / step }, (_, i) => start + i * step);
       const utcOffsetSeconds = response.utcOffsetSeconds();
-const timezone = response.timezone();
-const timezoneAbbreviation = response.timezoneAbbreviation();
-const latitude = response.latitude();
-const longitude = response.longitude();
+      const timezone = response.timezone();
+      const timezoneAbbreviation = response.timezoneAbbreviation();
+      const latitude = response.latitude();
+      const longitude = response.longitude();
 
-const hourly = response.hourly()!;
+      const hourly = response.hourly()!;
 
 // Note: The order of weather variables in the URL query and the indices below need to match!
 const weatherData = {
@@ -50,9 +50,10 @@ for (let i = 0; i < weatherData.hourly.time.length; i++) {
 	);
 }
     
-    } catch (e) {
+} catch (e)
+ {
       console.error('Error fetching data:', e);
-    }
+ }
 
 
     return 'Hello';
