@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { MeteoService } from './meteo.service';
+import { MeteoService } from './services/meteo.service';
 import { TileComponent } from "./tile/tile.component";
 
 @Component({

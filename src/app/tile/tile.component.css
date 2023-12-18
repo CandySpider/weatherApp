@@ -1,5 +1,10 @@
 .tall-box {
-    height: 300px; 
-    width: 200px; 
     background-color: #ccc; 
+    height: 400px;
+    width: 200px;
+    border-color: rgb(97, 7, 22);
+    border-radius: 1rem;
+    border-width: 0.1rem;
+    border-style: groove;
+    margin:1rem;
   }

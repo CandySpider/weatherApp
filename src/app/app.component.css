@@ -1,0 +1,6 @@
+.weather-box {
+  display: inline-flex;
+  border-color: aqua;
+  border-radius: 1rem;
+  padding:4rem;
+}
