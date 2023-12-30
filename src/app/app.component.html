@@ -1,9 +1,6 @@
 <h1>{{title}}</h1>
 <button type="button" (click)="onClick()">Click me</button>
 <div class="weather-box">
-<app-tile></app-tile>
-<app-tile></app-tile>
-<app-tile></app-tile>
-<app-tile></app-tile>
-<app-tile></app-tile>
+    
+<app-tile *ngFor="let day of days; let i = index" [title] = "days[daysOfWeek[i]].toString()" [High] = "daysHigh[daysOfWeek[i]]" [Low] = "daysLow[daysOfWeek[i]]" [Visibility]="daysVisibility[daysOfWeek[i]]" [Humidity]="daysHumidity[daysOfWeek[i]]"></app-tile>
 </div>

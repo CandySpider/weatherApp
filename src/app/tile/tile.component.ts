@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { InfoBarComponent } from "../info-bar/info-bar.component";
+import { WeatherData } from '../shared/types';
+import { empty } from 'rxjs';
 
 @Component({
     selector: 'app-tile',
@@ -10,5 +12,10 @@ import { InfoBarComponent } from "../info-bar/info-bar.component";
     imports: [CommonModule, InfoBarComponent]
 })
 export class TileComponent {
-   title: string[] = ['title','title'];
+   @Input() title: string ="Tile";
+   @Input() High: number = 0;
+   @Input() Low: number = 0;
+   @Input() Humidity: number = 0;
+   @Input() Visibility: number = 0;
+   
 }

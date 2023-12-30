@@ -1,7 +1,8 @@
-<p class="tall-box">tile works!
-<app-info-bar [name]="'High'"></app-info-bar>
-<app-info-bar [name]="'High'"></app-info-bar>
-<app-info-bar [name]="'High'"></app-info-bar>
-<app-info-bar [name]="'High'"></app-info-bar>
+<div class="tall-box">
+    <div class="tile-title">{{title}}</div>
+<app-info-bar [name]="'High:'" [value]="High" [unit]="'&deg;C'"></app-info-bar>
+<app-info-bar [name]="'Low:'" [value]="Low" [unit]="'&deg;C'"></app-info-bar>
+<app-info-bar [name]="'Humidity:'" [value]="Humidity" [unit]="'%'"></app-info-bar>
+<app-info-bar [name]="'Visibility:'" [value]="Visibility" [unit] = "'m'"></app-info-bar>
+</div>
 
-</p>

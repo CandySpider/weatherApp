@@ -1,10 +1,18 @@
 .tall-box {
     background-color: #ccc; 
-    height: 400px;
-    width: 200px;
     border-color: rgb(97, 7, 22);
     border-radius: 1rem;
     border-width: 0.1rem;
     border-style: groove;
     margin:1rem;
+    display: inline-flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .tile-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(97, 7, 22);
+    text-align: center;
+    margin:0.5rem;
   }

@@ -11,6 +11,7 @@ import { CommonModule } from '@angular/common';
 export class InfoBarComponent {
   @Input() name: string = 'value:';
   @Input() value: number = 0.0;
+  @Input() unit: string = 'unit';
 
 
 
