@@ -1,13 +1,18 @@
 .tall-box {
-    background-color: #ccc; 
-    border-color: rgb(97, 7, 22);
-    border-radius: 1rem;
-    border-width: 0.1rem;
-    border-style: groove;
+    background: rgb(255, 255, 255);; 
+    border-radius: 1.3rem;
+   border: 2px solid rgba(0, 0, 0, 0.4);
     margin:1rem;
     display: inline-flex;
     flex-direction: column;
     align-content: center;
+
+    -webkit-transition:  -webkit-transform .2s ease-out;
+    -moz-transition: -moz-transform .2s ease-out;
+    -o-transition: -o-transform .2s ease-out;
+    -ms-transition: -ms-transform .2s ease-out; 
+    transition: transform .2s ease-out; 
+    overflow: hidden; 
   }
   .tile-title {
     font-size: 1.5rem;
@@ -16,3 +21,10 @@
     text-align: center;
     margin:0.5rem;
   }
+
+.tall-box:hover {
+   -webkit-transform:scale(1.2);
+   -moz-transform:scale(1.2);
+   -o-transform:scale(1.2);
+   transform:scale(1.2);
+}

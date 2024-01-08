@@ -1,6 +1,14 @@
 .weather-box {
+  /* background: rgba(255, 255, 255, 0.8);; */
+  background: rgba(255, 255, 255, 0.1);
   display: inline-flex;
-  border-color: aqua;
+  flex-wrap: wrap;
+  border-color: rgb(238, 255, 0);
+  border-width: 0rem;
   border-radius: 1rem;
-  padding:4rem;
+  border-style: inset;
+  padding:0.4rem;
+  margin:1.5rem;
+  backdrop-filter: blur(10px);
 }
+

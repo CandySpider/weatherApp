@@ -4,16 +4,17 @@ import { RouterOutlet } from '@angular/router';
 import { MeteoService } from './services/meteo.service';
 import { TileComponent } from "./tile/tile.component";
 import { WeatherData } from './shared/types';
-
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import {MatCardModule} from '@angular/material/card';
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [CommonModule, RouterOutlet, TileComponent]
+    imports: [CommonModule, RouterOutlet, TileComponent, MatSlideToggleModule, MatCardModule]
 })
 export class AppComponent {
-  title = 'weatherApp';
+  title = 'Check out the weather! ☀';
   days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
   daysOfWeek: number[] = [0, 1, 2, 3, 4, 5, 6] ;
   daysHigh: number[] = [-100, -100, -100, -100, -100, -100, -100];
